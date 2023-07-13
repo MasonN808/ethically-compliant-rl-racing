@@ -712,9 +712,9 @@ if __name__=="__main__":
         viewer.window.on_key_press = key_press
         viewer.window.on_key_release = key_release
     record_video = False
-    if record_video:
-        from gym.wrappers.monitor import Monitor
-        env = Monitor(env, '/tmp/video-test', force=True)
+    # if record_video:
+    #     from gym.wrappers.monitor import Monitor
+    #     env = Monitor(env, '/tmp/video-test', force=True)
     isopen = True
     stopped = False
     while isopen and not stopped:
